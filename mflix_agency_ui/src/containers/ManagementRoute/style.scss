@@ -1,0 +1,378 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-image: none !important;
+  color: #000;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+.management-layout-container {
+  background: #fff;
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  clear: both;
+  overflow: hidden;
+  min-height: 400px;
+
+  .item:hover .wrapper,
+  .item:hover ~ .wrapper {
+    background-color: #fff;
+    display: unset;
+    left: 43px;
+    height: 100%;
+  }
+
+  .menu-text {
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .main-content-container {
+    padding-top: 60px !important;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    // height: 75%;
+    overflow: auto;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    .management-sidebar:hover {
+      width: 400px;
+      transition: all 0.3s;
+      -webkit-box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.04);
+      -moz-box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.04);
+      box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.04);
+      z-index: 30;
+
+      .title {
+        display: unset;
+        transition: all 0.3s;
+        position: absolute;
+        padding: 0 0 0 50px;
+      }
+    }
+
+    .management-sidebar {
+      height: calc(100% - 60px);
+      padding-bottom: 60px;
+      overflow: auto;
+      width: 60px;
+      border-right: 1px solid #D7D8D9;
+      background: #fff;
+      z-index: 10;
+      transition: all 0.3s;
+      position: absolute;
+
+      .title {
+        display: none;
+        padding: 30px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .icon-bar {
+        margin-top: 5px;
+        height: auto;
+
+        i.fa {
+          width: 30px;
+          height: 30px;
+          z-index: 1;
+          position: absolute;
+          margin-top: 0;
+        }
+      }
+
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        color: #555555;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left;
+        padding: 30px 30px 50px 15px;
+
+        &~ .title {
+          opacity: 0;
+        }
+
+      }
+
+      .icon-bar a.selected {
+        color: #49a8b0 !important;
+      }
+
+      .icon-bar a:hover {
+        color: #49a8b0;
+
+        &~ .title {
+          -webkit-transition: opacity 2s ease-in;
+          -moz-transition: opacity 2s ease-in;
+          -o-transition: opacity 2s ease-in;
+          opacity: 1;
+        }
+      }
+
+      .active {
+        background: #49a8b0;
+        color: #fff !important;
+
+        &:hover {}
+      }
+    }
+
+    .management-content-container {
+      background: #fff;
+      margin: 0px 10px 60px 60px;
+      overflow: auto;
+      height: calc(100% - 60px);
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .management-footer,
+  .management-header {
+    display: block;
+    padding: 1em;
+  }
+
+  .management-header {
+    background: #49a8b0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    min-width: 400px;
+  }
+
+  .management-footer {
+    // height: 25%;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    min-width: 270px;
+    z-index: 50;
+    &:hover {
+      height: 200px;
+    }
+  }
+  /* Too narrow to support three columns */
+}
+@media all and (max-width: 768px) {
+  .management-content {
+    padding-top: 60px !important;
+  }
+  .management-layout-container .main-content-container .management-content-container {
+    margin: 5px 10px 60px;
+  }
+
+  .management-sidebar {
+    position: absolute;
+    width: 100% !important;
+    height: 50px !important;
+    overflow: auto;
+    overflow-y: hidden;
+    background: #fff;
+    padding-bottom: 0 !important;
+    border-bottom: 1px solid #D7D8D9;
+    z-index: 30;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .icon-bar {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      background: white;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .title {
+        display: none !important;
+      }
+
+      > a {
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        color: #555555;
+        font-size: 20px;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+        padding: 30px !important;
+        margin-top: -30px;
+      }
+    }
+  }
+}
+@media (max-height:500px) {
+  .management-footer-container > span {
+    top: 35px;
+
+    .logo-container {
+      height: 40px;
+    }
+  }
+
+  .management-content-container {
+    height: calc(100% - 60px);
+  }
+
+  .management-layout-container .main-content-container .management-content-container {
+    margin: 0px 10px 60px 60px;
+  }
+
+  .management-footer {
+    height: 60px;
+  }
+
+  .hidden-h-500 {
+    display: none;
+  }
+}
+
+.icon-bar {
+  .ico-report-management {
+    background: url("images/ico-report-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-account-management {
+    background: url("images/ico-account-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-agency-management {
+    background: url("images/ico-agency-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-campaign-management {
+    background: url("images/ico-campaign-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-creative-management {
+    background: url("images/ico-creative-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-io-management {
+    background: url("images/ico-io-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-price-management {
+    background: url("images/ico-price-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ico-revenue-management {
+    background: url("images/ico-revenue-management.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  a {
+    &:hover {
+      .ico-report-management {
+        background: url("images/ico-report-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-account-management {
+        background: url("images/ico-account-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-agency-management {
+        background: url("images/ico-agency-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-campaign-management {
+        background: url("images/ico-campaign-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-creative-management {
+        background: url("images/ico-creative-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-io-management {
+        background: url("images/ico-io-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-price-management {
+        background: url("images/ico-price-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .ico-revenue-management {
+        background: url("images/ico-revenue-management-reverse.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

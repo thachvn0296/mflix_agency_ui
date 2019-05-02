@@ -1,0 +1,125 @@
+.list-campaign-container {
+  .list-campaign {
+    background-color: #fff;
+    margin-top: 60px;
+  }
+  .barchart-box {
+    // height: 300px;
+    width: calc(50% - 30px);
+    margin: 15px;
+    background: #fff;
+    display: inline-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+    .chart {
+      background: #fff;
+    }
+
+    .chartjs-size-monitor {
+      height: 500px;
+    }
+
+    canvas {
+      margin: 0 auto;
+    }
+  }
+
+  .row {
+    margin-top: 10px;
+
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    .report-chart-box,
+    .report-chart-box-2-cols {
+      width: 50%;
+      background: #f3f6f9;
+      padding: 0;
+      margin: 0;
+    }
+
+    .report-chart-box > div {
+      width: calc(50% - 30px);
+      margin: 15px;
+      background: #fff;
+    }
+
+    .report-doughnut-chart-box {
+      background: #fff !important;
+      width: calc(50% - 30px);
+      margin: 15px;
+    }
+
+    .report-chart-box-2-cols > div {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .sticky-div {
+      height: auto;
+      min-height: 200px;
+      width: calc(33.33% - 30px);
+      margin: 15px;
+      background: #fff;
+      display: inline-flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .pie-sticky-div {
+      height: auto;
+      min-height: 400px;
+      min-width: 330px;
+      width: calc(33.33% - 30px);
+      margin: 15px;
+      background: #fff;
+      display: inline-flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .sticky-div, .pie-sticky-div {
+        width: calc(100% - 30px);
+        min-width: 330px;
+      }
+      .barchart-box {
+        width: calc(100% - 30px);
+      }
+    }
+
+    @media (min-width: 993px) {
+      .pie-sticky-div {
+        width: calc(50% - 30px);
+      }
+    }
+    @media (min-width: 1301px) {
+      .pie-sticky-div {
+        width: calc(33.33% - 30px);
+      }
+
+      .barchart-box {
+        width: calc(50% - 30px);
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .list-campaign-container {
+    .list-campaign {
+      background-color: #fff;
+      margin-top: 100px;
+    }
+  }
+}

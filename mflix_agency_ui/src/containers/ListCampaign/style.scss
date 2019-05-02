@@ -1,0 +1,40 @@
+$mflix-color: #49a8b0;
+
+.list-campaign-wrapper {
+  .ant-input-suffix {
+    top: 40px !important;
+  }
+
+  .rdrDays {
+    .rdrDay {
+      & > span {
+        height: 35px !important;
+        color: $mflix-color !important;
+
+      }
+      .rdrDayNumber {
+        top: 10px;
+      }
+
+      .rdrDayStartPreview, .rdrDayEndPreview, .rdrDayInPreview {
+        top: 5px;
+      }
+    }
+  }
+}
+
+.list-campaign-container {
+  .list-campaign {
+    background-color: #fff;
+    margin-top: 60px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list-campaign-container {
+    .list-campaign {
+      background-color: #fff;
+      margin-top: 100px;
+    }
+  }
+}

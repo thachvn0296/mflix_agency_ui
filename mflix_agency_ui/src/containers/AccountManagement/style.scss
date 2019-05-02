@@ -1,0 +1,17 @@
+$mflix-color: #49a8b0;
+
+.creative-management-container {
+  .list-creative {
+    background-color: #fff;
+    margin-top: 60px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .creative-management-container {
+    .list-creative {
+      background-color: #fff;
+      margin-top: 100px;
+    }
+  }
+}

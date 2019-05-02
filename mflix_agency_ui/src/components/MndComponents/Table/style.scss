@@ -1,0 +1,101 @@
+$mflix-color: #49a8b0;
+
+.mnd-table-container {
+  font-size: 14px;
+  width: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .table-wrap {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+
+    .table-box {
+      .mnd-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        background: white;
+
+        tbody {
+          box-sizing: border-box;
+
+          tr {
+            box-sizing: border-box;
+          }
+
+          tr.title-row {
+            td:first-child {
+              color: $mflix-color;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+
+          td,
+          th {
+            border: 1px solid #D7D8D9;
+            padding: 8px;
+            text-align: left;
+            overflow: hidden;
+            white-space: normal;
+            text-overflow: ellipsis;
+            border-left: 1px solid #D7D8D9;
+            border-right: 1px solid #D7D8D9;
+            word-wrap: break-word;
+          }
+
+          th {
+            background: teal;
+            color: white;
+            text-transform: uppercase;
+            font-weight: normal;
+          }
+
+          .table-nodata-message {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            color: gray;
+            font-style: italic;
+
+            &:before {
+              content: "< ";
+            }
+
+            &:after {
+              content: " >";
+            }
+          }
+
+          .mnd-table-body:last-child {
+            border-bottom: 1px solid #D7D8D9;
+          }
+
+          .mnd-table-body:nth-child(even) {
+            background: #FFFFFF;
+          }
+
+          .mnd-table-body:nth-child(odd) {
+            background: #F2F2F2;
+          }
+        }
+
+        .mnd-table-header {
+          font-weight: bold;
+          color: $mflix-color;
+          background-color: #E5E5E5;
+          border-top: 1px solid #D7D8D9;
+        }
+      }
+    }
+  }
+}

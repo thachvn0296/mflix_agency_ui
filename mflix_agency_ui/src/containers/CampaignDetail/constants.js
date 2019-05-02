@@ -1,0 +1,7 @@
+const GET_CAMPAIGN_SUCCESS = 'CampaignDetail/GET_CAMPAIGN_SUCCESS';
+const GET_CAMPAIGN_FAIL = 'CampaignDetail/GET_CAMPAIGN_FAIL';
+
+export {
+    GET_CAMPAIGN_FAIL,
+    GET_CAMPAIGN_SUCCESS,
+}

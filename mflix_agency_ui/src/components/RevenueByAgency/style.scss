@@ -1,0 +1,92 @@
+$mflix-color: #5CB1BF;
+
+.detail-revenue-wrapper {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+
+  .detail-report-title {
+    height: 60px;
+    border-bottom: 1px solid #D7D8D9;
+    height: 50px;
+    text-align: left;
+    font-weight: bold;
+
+    .report-badge {
+      width: 80px;
+      display: inline-block;
+      padding: 10px;
+      border-left: 1px solid #ccc;
+      height: 100%;
+      color: $mflix-color;
+    }
+
+    .title-text {
+      width: calc(100% - 80px);
+      display: inline-block;
+      padding: 0;
+
+      .logo {
+        position: relative;
+        display: inherit;
+        height: 30px;
+        width: 30px;
+      }
+
+      .text {
+        display: inline-block;
+        padding-left: 10px;
+      }
+
+      .img-fit {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .detail-report-content {
+    width: 100%;
+    display: inline-block;
+    padding-top: 40px;
+    height: calc(100% - 60px);
+    padding: 10px;
+
+    .wrapper {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .line {
+      padding: 10px 0;
+    }
+
+    .line.booking-result-data,
+    .line.title {
+      font-weight: bold;
+    }
+
+    .line.booking-data,
+    .line.booking-result-data {
+      color: $mflix-color;
+    }
+
+    .line.booking-result-data {
+      font-size: 30px;
+    }
+
+    .text-capital {
+      text-transform: uppercase;
+    }
+
+    .box {
+      padding-top: 10px;
+    }
+  }
+}

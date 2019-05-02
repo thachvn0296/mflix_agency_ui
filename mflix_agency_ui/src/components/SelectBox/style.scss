@@ -1,0 +1,19 @@
+.dropdown-tree-wrapper {
+  display: inline-table !important;
+  margin-bottom: 10px;
+  padding: 0 !important;
+
+  .tag-item {
+    margin: 5px;
+  }
+
+  .tag {
+    background: #D3D3D3;
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+
+.boundary {
+  overflow: auto;
+}

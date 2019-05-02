@@ -1,0 +1,33 @@
+$mflix-color: #52A8AE;
+
+.create-form-preview-wrapper {
+  padding: 0 !important;
+  .form-panel {
+    margin: 15px 0;
+  }
+
+  .campaign-final-preview-box {
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+    min-width: 400px;
+    padding: 0 !important;
+
+    .title {
+      color: $mflix-color;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .potential-wrapper {
+      padding: 20px;
+    }
+  }
+}

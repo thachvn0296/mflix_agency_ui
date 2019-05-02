@@ -1,0 +1,26 @@
+$mflix-color: #49a8b0;
+
+.pagination {
+  margin-left: auto;
+  width: fit-content;
+
+  .page-item {
+    background: rgba(0,0,0,0);
+    border: none;
+  }
+
+  .page-link {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: gray;
+    font-size: 15px;
+  }
+
+  .page-item.active {
+    & > .page-link {
+      color: #49a8b0;
+      background: rgba(0,0,0,0);
+      border: none;
+    }
+  }
+}

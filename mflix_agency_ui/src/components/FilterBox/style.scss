@@ -1,0 +1,124 @@
+$mflix-color: #49a8b0;
+
+.filter-box {
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  width: calc(100% - 60px);
+  left: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 18;
+
+  .dropdown-menu-wrapper {
+    background: #fff;
+    -webkit-box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.07);
+    -moz-box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.07);
+    box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.07);
+    // overflow: auto;
+    max-height: 500px;
+    position: inherit;
+    height: auto;
+  }
+
+  .apply-button-wrapper {
+    padding: 10px;
+
+    .apply-button {
+      width: auto !important;
+      background-color: #49a8b0 !important;
+      color: #fff;
+      font-size: 15px;
+      padding: 10px;
+      margin-right: 50px;
+    }
+  }
+
+  .button-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: #fff;
+    padding: 0 50px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .ibutton-wrapper {
+      flex: none !important;
+    margin-left: auto;
+    }
+
+    .button-wrapper {
+      flex: 1;
+
+      .button {
+        width: 100%;
+        background-color: #fff;
+        padding: 1em;
+        color: $mflix-color;
+        font-size: 15px;
+
+        &:focus {
+          text-decoration: none;
+          outline: none;
+          border: none;
+          box-shadow: none;
+        }
+      }
+
+      .button-clicked {
+        background-color: $mflix-color;
+        color: #fff;
+      }
+
+      .special-button {
+        width: auto !important;
+        background-color: #49a8b0 !important;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px;
+        display: block;
+        margin: 5px auto 10px;
+      }
+
+      .header-button-link {
+        float: right;
+        margin-right: 10px;
+      }
+
+      .ibutton {
+        color:  #49a8b0 !important;
+        background-color: #fff !important;
+        font-size: 30px;
+        padding: 0px;
+        margin: 5px 0px 0px 40px;
+      }
+    }
+  }
+
+  .btn-grp {
+    flex: 1;
+    padding: 10px;
+    margin: 5px auto 10px;
+
+    .grp-btn {
+      margin: 5px 2px !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .filter-box {
+    top: 110px;
+    width: 100%;
+    left: 0;
+
+    .button-group {
+      padding: 0;
+      width: unset;
+    }
+  }
+}

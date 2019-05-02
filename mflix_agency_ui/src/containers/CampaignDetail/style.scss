@@ -1,0 +1,68 @@
+$mflix-color: #49a8b0;
+
+.campaign-detail-container-fluid {
+  position: relative;
+
+  .step-checkbox-wrapper {
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    width: calc(100% - 120px);
+    height: 60px;
+    z-index: 8;
+    padding: 20px;
+    margin: 0 30px;
+    background: rgba(250,250,250,0.9);
+    display: inline-flex;
+    align-items: center;
+    color: $mflix-color;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .create-campaign-wrapper {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .campaign-detail-container-fluid {
+    .step-checkbox-wrapper {
+      position: fixed;
+      top: 110px;
+      left: 20px;
+      width: calc(100% - 100px);
+      z-index: 8;
+      padding: 10px;
+      margin: 0 30px;
+    }
+
+    .create-campaign-wrapper {
+      margin-top: 40px;
+    }
+
+    .step-checkbox-wrapper {
+      .step-checker-container {
+        .progress {
+          span {
+            position: fixed !important;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 30;
+            margin: 45px 0 15px 15px;
+            width: calc(100% - 30px);
+            max-height: 150px;
+            overflow: auto;
+            border-radius: 10px;
+            text-align: left;
+            padding: 10px;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            font-weight: normal;
+            min-width: 270px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

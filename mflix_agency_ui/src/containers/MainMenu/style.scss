@@ -1,0 +1,87 @@
+$mflix-color: #49a8b0;
+
+.main-menu-container {
+  height: 80px;
+
+  .navbar-header {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .header-container {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0) !important;
+    box-shadow: none;
+    border: none;
+    top: 15px;
+    z-index: 20;
+
+    .logo {
+      width: auto;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background: none;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+  }
+
+  .navbar-default .navbar-toggle {
+    margin-left: 20px;
+  }
+
+  .navbar-brand {
+    width: 130px;
+    position: relative;
+  }
+
+  .navbar-nav {
+    float: right !important;
+    flex-direction: inherit;
+
+    li {
+      a {
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          background-color: $mflix-color;
+          color: #fff;
+          border: 0;
+        }
+      }
+    }
+
+    .active {}
+
+    .header-login-btn {
+      a {
+        background-color: #fff;
+        border-radius: 5px;
+        color: $mflix-color;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      background: rgba(0,0,0,0.55);
+      padding: 20px;
+      border-radius: 5px;
+    }
+  }
+}

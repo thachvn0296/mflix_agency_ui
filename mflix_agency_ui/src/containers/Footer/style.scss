@@ -1,0 +1,130 @@
+$mflix-color: #49a8b0;
+
+.footer-container {
+  background-color: #49a8b0;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+
+  .button-group {
+    min-width: 600px;
+    width: 100%;
+    padding: 0 4rem;
+    font-size: 16px;
+    margin: 0.4rem 0 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .menu-button {
+      display: inline-block;
+      margin: 10px 10px 0;
+      flex-grow: 1;
+      height: 100px;
+      width: calc(100% * (1/8) - 20px - 1px);
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      transition: all 0.5s;
+      outline: none;
+      position: relative;
+      padding: 8px;
+      word-break: break-word;
+
+      i {
+        display: list-item;
+        position: absolute;
+        top: 5px;
+        /* Allows an absolute positioned psuedo element */
+      }
+
+      i::after {
+        content: "";
+        /* Allows psuedo element to show */
+      }
+
+      &:hover {
+        background-color: #fff;
+        color: $mflix-color;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 6px;
+        position: relative;
+
+        div {
+          top: 5px;
+        }
+
+        i {
+          background-color: $mflix-color;
+        }
+      }
+
+      div {
+        text-align: left;
+        position: relative;
+      }
+    }
+    @media screen and (max-width: 962px) {
+      .menu-button {
+        width: calc(100% * (1/4) - 20px - 1px);
+      }
+    }
+
+    @media screen and (max-width: 962px) {
+      .menu-button {
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.ico-report-management {
+  background: url("images/ico-report-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-account-management {
+  background: url("images/ico-account-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-agency-management {
+  background: url("images/ico-agency-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-campaign-management {
+  background: url("images/ico-campaign-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-creative-management {
+  background: url("images/ico-creative-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-io-management {
+  background: url("images/ico-io-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-price-management {
+  background: url("images/ico-price-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}
+
+.ico-revenue-management {
+  background: url("images/ico-revenue-management.svg");
+  background-repeat: no-repeat;
+  /* Your icon */
+}

@@ -1,0 +1,26 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../../image/background-3.jpg") !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  color: #fff;
+  position: relative;
+}
+
+.dashboard-main-container {
+  color: #fff;
+  font-size: 18px;
+  height: calc(100% - 80px);
+  position: absolute;
+  left: 0;
+
+  .mission {
+  }
+
+  .form {
+  }
+}

@@ -1,0 +1,60 @@
+.gauge-chart {
+  padding: 10px;
+  height: 100%;
+
+  span {
+    div {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clear: both;
+      margin: 0 auto;
+
+      svg {
+        height: 200px;
+      }
+    }
+  }
+
+  .legend-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .legend-item {
+      flex: 0 50%;
+      box-sizing: border-box;
+      padding: 10px;
+
+      &:before {
+        content: "";
+        padding: 2px 20px;
+        border-radius: 2px;
+        margin-right: 20px;
+      }
+
+      &:nth-child(even) {
+        text-align: left;
+      }
+      &:nth-child(odd) {
+        text-align: left;
+      }
+    }
+
+    .item-low::before {
+      background: #FBDE97;
+    }
+
+    .item-medium::before {
+      background: #FAAB4F;
+    }
+
+    .item-high::before {
+      background: #4FA8AF;
+    }
+
+    .item-veryhigh::before {
+      background: #9F2513;
+    }
+  }
+}

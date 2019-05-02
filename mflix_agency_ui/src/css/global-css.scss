@@ -1,0 +1,615 @@
+$mflix-color: #49a8b0; //-------------------------- SVG ICON
+
+.blur-all {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.form-control {
+  font-size: 15px;
+}
+
+.w80 {
+  position: relative;
+  width: 80px !important;
+
+  .action-btn-box {
+    .action-wrapper {
+      i {
+        width: 50%;
+
+        &:hover {
+          color: $mflix-color;
+        }
+      }
+    }
+  }
+
+  .w80-1 {
+    position: relative;
+    width: 80px !important;
+
+    .action-btn-box {
+      .action-wrapper {
+        i {
+          width: 100%;
+
+          &:hover {
+            color: $mflix-color;
+          }
+        }
+      }
+    }
+  }
+
+  .line-in-middle {
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    background: #D7D8D9;
+  }
+}
+
+.h70 {
+  height: 70px !important;
+}
+
+.l-50-p {
+  left: 50% !important;
+}
+
+.svg-img {
+  width: auto;
+}
+
+button {
+  outline: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.icon > svg {
+  position: relative;
+}
+
+.icon > img {
+  position: relative;
+}
+@media all and (max-width: 900px) {
+  .hide-900 {
+    display: none;
+  }
+}
+
+.management-container-main-bg {
+  background: #FAFAFA !important;
+}
+
+span {
+  height: 50px;
+  font-size: 18px;
+
+  .child-menu {
+    padding: 0;
+    left: 60px;
+    height: 50px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    clear: both;
+    width: calc(100% - 60px);
+    box-shadow: 0 1px #D7D8D9;
+    font-size: 18px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    span {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 700px;
+      height: 50px;
+
+      .btn-box {
+        flex: auto;
+        border-right: 1px solid #D7D8D9;
+
+        .dropdown {
+          height: 50px;
+          position: unset;
+
+          button {
+            height: 100%;
+            width: 100%;
+
+            i {
+              padding-left: 2%;
+              position: absolute;
+              top: 40%;
+            }
+          }
+
+          .btn-dropdown {
+            background: #fff;
+            padding: 5px;
+            // background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right #fff;
+            -webkit-appearance: none;
+            background-position-x: 90%;
+            font-size: 15px;
+          }
+
+          .dropdown-toggle::after {
+            display: none;
+          }
+
+          .dropdown-menu {
+            box-shadow: none;
+            position: fixed !important;
+            left: 65px !important;
+            top: 110px !important;
+            -webkit-transform: translate3d(5px, 5px, 0px);
+            transform: translate3d(5px, 5px, 0px);
+            z-index: 10;
+            width: calc(100% - 60px);
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  span {
+    .child-menu {
+      left: 0;
+      top: 110px;
+      width: 100%;
+
+      span {
+        .btn-box {
+          .dropdown {
+            .dropdown-menu {
+              left: 0 !important;
+              top: 155px !important;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hide-768 {
+    display: none;
+  }
+}
+
+.fieldset-calendar-picker-wrapper {
+  height: 500px;
+  width: 900px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rdrDateRangePickerWrapper {
+    height: 600px;
+    overflow: auto;
+    width: 1400px;
+  }
+}
+
+fieldset.group {
+  margin: 0;
+  padding: 0;
+  // margin-bottom: 1.25em;
+  padding: 0.125em;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+  }
+
+  legend {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 100%;
+    color: black;
+  }
+}
+
+ul.checkbox {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  list-style: none;
+  font-size: 15px;
+  min-width: 450px;
+
+  li input {
+    margin-right: 0.25em;
+    margin-top: 5px;
+  }
+
+  li {
+    border: 1px transparent solid;
+    float: left;
+    min-width: 200px;
+    padding: 10px;
+  }
+}
+
+.child-menu-btn-wrapper {
+  height: 100% !important;
+  line-height: 100%;
+
+  .btn-child-menu {
+    position: relative;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #fff !important;
+    background: #49a8b0 !important;
+    font-weight: bold;
+    padding: 8px;
+    /* width: 50%; */
+    border-radius: 5px;
+    padding: 10px !important;
+    width: inherit !important;
+    height: auto !important;
+  }
+}
+
+.dropdown .dropdown-menu {
+  -webkit-transition: width 2s, height 4s;
+  /* Safari */
+  transition: width 2s, height 4s;
+}
+/* The container */
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 15px;
+}
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: #eee;
+  min-width: 1px;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  border-radius: 5px;
+}
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #49a8b0;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.curve-box {
+  border: 1px solid #D7D8D9;
+  border-radius: 10px;
+}
+
+.dropzone-boundary {
+  position: relative;
+  min-height: 150px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  max-height: 250px;
+
+  input {
+    width: 100%;
+  }
+
+  .dropzone-title {
+    font-size: 15px;
+    width: 100%;
+    left: 0;
+    padding: 0 0 0 10px;
+  }
+
+  .dropzone-icon {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+
+    i {
+      position: absolute;
+      font-size: 30px;
+      font-weight: bold;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+  }
+}
+
+.input-form {
+  height: calc(4rem + 2px) !important;
+  font-size: 15px !important;
+  border-radius: 7px !important;
+}
+// -------------------------- Ant Design Component
+
+.ant-input:focus,
+.ant-input:hover {
+  border-color: $mflix-color !important;
+  -webkit-box-shadow: 0 0 0 1px rgba(130,130,130,0.3);
+  -moz-box-shadow: 0 0 0 1px rgba(130,130,130,0.3);
+  box-shadow: 0 0 0 1px rgba(130,130,130,0.3);
+}
+
+.rdrDateDisplay {
+  color: $mflix-color !important;
+
+  .rdrDateDisplayItem {
+    input {
+      &:focus {
+        text-decoration: none;
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.rdrStaticRangeSelected {
+  color: $mflix-color !important;
+}
+
+.rdrDay {
+  .rdrDayEndPreview,
+  .rdrDayInPreview,
+  .rdrDayStartPreview,
+  .rdrEndEdge,
+  .rdrInRange,
+  .rdrStartEdge {
+    color: $mflix-color !important;
+  }
+
+  span {
+    height: 35px;
+    top: 1px;
+    left: 0;
+    right: 0;
+  }
+
+  .rdrDayToday .rdrDayNumber span:after {
+    background: $mflix-color !important;
+  }
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  background: $mflix-color !important;
+}
+
+.ant-calendar-picker-icon {
+  margin-top: -15px !important;
+}
+
+.ant-calendar-picker-clear,
+.ant-calendar-picker-icon {
+  margin-top: -15px;
+}
+
+.ant-calendar-picker {
+  width: 100% !important;
+}
+
+.ant-select {
+  height: auto;
+  width: 100% !important;
+
+  .ant-select-selection--multiple {
+    min-height: 32px;
+    cursor: text;
+    padding-bottom: 3px;
+    zoom: 1;
+    height: auto;
+
+    ul {
+      clear: both;
+      display: block;
+
+      li {}
+    }
+  }
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.ant-select-tree-node-content-wrapper {
+  height: 40px !important;
+}
+
+.ant-select-selection--single {
+  width: 99%;
+}
+// -------------------------- Toggle btn
+
+.toggle-cb-wrapper {
+  justify-content: center;
+  display: flex;
+
+  .tgl {
+    display: none;
+
+    &,
+    & *,
+    & *:after,
+    & *:before,
+    & + .tgl-btn,
+    &:after,
+    &:before {
+      box-sizing: border-box;
+
+      &::selection {
+        background: none;
+      }
+    }
+
+    + .tgl-btn {
+      outline: 0;
+      display: block;
+      width: 40px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+
+      &:after,
+      &:before {
+        position: relative;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+      }
+
+      &:after {
+        left: 0;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:checked + .tgl-btn:after {
+      left: 50%;
+    }
+  }
+  // themes
+  .tgl-light {
+    + .tgl-btn {
+      background: gray;
+      border-radius: 2em;
+      padding: 2px;
+      transition: all 0.4s ease;
+
+      &:after {
+        border-radius: 50%;
+        background: #fff;
+        transition: all 0.2s ease;
+      }
+    }
+
+    &:checked + .tgl-btn {
+      background: $mflix-color;
+    }
+  }
+}
+
+.preset-box {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+
+  .preset-item {
+    display: inline-block;
+    padding: 0;
+    width: 30%;
+    margin: 5px;
+
+    div {}
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 9px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.08);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      overflow: visible;
+    }
+
+    img.selected {
+      border: 1.3px solid $mflix-color;
+    }
+  }
+}

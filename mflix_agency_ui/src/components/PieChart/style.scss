@@ -1,0 +1,40 @@
+.pie-chart-box {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+
+  .chart-title-box {
+    height: 60px;
+    border-bottom: 1px solid #D7D8D9;
+    height: 50px;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .chart-box {
+    width: 65%;
+    display: inline-block;
+    height: calc(100% - 60px);
+    padding: 10px;
+  }
+
+  .legend-box {
+    width: 35%;
+    display: inline-block;
+    height: calc(100% - 60px);
+
+    div,
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+      position: relative;
+      top: 30px;
+    }
+
+
+  }
+  svg {
+    overflow: none;
+  }
+}

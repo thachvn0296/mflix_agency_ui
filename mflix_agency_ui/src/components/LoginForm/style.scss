@@ -1,0 +1,120 @@
+$mflix-color: #49a8b0;
+
+.css-1wvv9v7,
+.css-ph4qhg {
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  .css-10zneet,
+  .css-18rqjra {
+    border-left: 25px solid gray;
+    border-bottom: 25px solid gray;
+    border-top: 25px solid gray;
+  }
+
+  .css-18rniua,
+  .css-3syn48,
+  .css-ueou2,
+  .css-vyfd34 {
+    background-color: gray;
+  }
+}
+
+.css-df17o1 {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.login-form {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .form {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    min-width: auto;
+
+    .logo {
+      display: flex;
+      margin: 0 0 1em;
+
+      div.mflix-logo {
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0.5em;
+      }
+    }
+
+    .input-form {
+      width: 100%;
+      height: 100%;
+      margin: 0 0 1em;
+      position: relative;
+      height: 50px !important;
+      margin-bottom: 20px;
+
+      span {
+        float: left;
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        z-index: 2;
+        color: #ccc;
+      }
+
+      .login-input {
+        height: 100%;
+        width: 100%;
+        padding: 5px 5px 5px 50px;
+        color: #000;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+
+        &:focus {
+          border: 2px solid $mflix-color;
+          outline: none;
+        }
+      }
+    }
+
+    .reg-link {
+      padding: 10px;
+      text-align: right;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .login-button {
+      padding: 10px 0;
+      background-color: $mflix-color;
+      font-weight: bold;
+      width: 100%;
+      border-radius: 5px;
+
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+
+    div.login-success {
+      color: #c7c9ff;
+    }
+
+    div.login-fail {
+      color: #ffd2d2;
+    }
+  }
+}

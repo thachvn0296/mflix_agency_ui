@@ -1,0 +1,26 @@
+.bar-chart-wrapper {
+  width: 100%;
+  padding: 10px;
+
+
+  .chart-title-box {
+    height: 60px;
+    border-bottom: 1px solid #D7D8D9;
+    height: 50px;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .chart-box {
+    width: 100%;
+    display: inline-block;
+    padding-top: 40px;
+    height: calc(100% - 60px);
+
+    svg {
+      width: 100% !important;
+      max-height: 300px;
+    }
+  }
+}
